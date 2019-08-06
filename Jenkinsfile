@@ -1,8 +1,9 @@
 pipeline{
  agent any
- environment {
-    ANYPOINT = credentials('ANYPOINT')
- }
+ tools {
+        maven 'mavenHome'
+        jdk 'JavaHome'
+    }
  stages {
  	stage ('Build'){
  		steps {
