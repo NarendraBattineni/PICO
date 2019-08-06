@@ -1,0 +1,7 @@
+http:
+  port: "8091"
+
+sfdc:
+  user: "mule.srivis@srivis.com"
+  password: "mulesoft123"
+  token: "pRjuWHjinpQSDZnlJNBM01fD"
