@@ -14,7 +14,7 @@ pipeline{
  	stage ('Deploy'){
  		steps {
  			withMaven(maven:'maven'){
- 				sh 'mvn -f pico/pom.xml package deploy  -Dusername=mule_srivis12 -Dpassword=Mule123 -Denvironment=Sandbox -DmuleDeploy'
+ 				sh 'mvn -f pico/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
  			}
  		}
  	}
