@@ -6,15 +6,15 @@ pipeline{
  stages {
  	stage ('Build'){
  		steps {
- 			withMaven(maven:'maven'){
- 				sh 'mvn -f pico/pom.xml clean install'
+ 			maven{
+ 				  mvn -f pico/pom.xml clean install
  			}
  		}
  	}
  	stage ('Deploy'){
  		steps {
- 			withMaven(maven:'maven'){
- 				sh 'mvn -f pico/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
+ 			maven{
+ 				  mvn -f pico/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy
  			}
  		}
  	}
