@@ -11,10 +11,10 @@ pipeline{
  	}
  	stage ('Deploy'){
  		steps {
- 			sh 'mvn -f mule-jenkins-pipeline/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
- 			}
- 		}
+ 			      sh 'mvn -f mule-jenkins-pipeline/pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
+ 			    }
+ 		 }
  	}
- }
-
 }
+
+
