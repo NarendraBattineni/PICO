@@ -6,12 +6,12 @@ pipeline{
  stages {
  	stage ('Build'){
  		steps {
- 			sh 'mvn -f pom.xml clean install'
+ 			sh 'mvn -p clean install'
  		}
  	}
  	stage ('Deploy'){
  		steps {
- 			      sh 'mvn -f pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
+    sh 'mvn deploy -p cloudHubDeployment -Dusername=${ANYPOINT_USR} -Dpassword=${ANYPOINT_PSW} -Denvironment=Sandbox -DmuleDeploy'
  			    }
  		 }
  	}
