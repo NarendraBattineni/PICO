@@ -28,7 +28,7 @@
 				
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>3.9.3</muleVersion>
+						<muleVersion>4.2.1</muleVersion>
 						<username>mule_srivis12</username>
 						<password>Mule123</password>
 						<applicationName>${project.artifactId}</applicationName>
