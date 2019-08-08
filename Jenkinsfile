@@ -3,10 +3,14 @@ pipeline{
  environment {
     ANYPOINT = credentials('ANYPOINT')
  }
+ tools {
+       maven 'maven'
+       jdk 'jdk'
+ }
  stages {
  	stage ('Build'){
  		steps {
- 			 'mvn clean install'
+ 			     bat 'mvn clean install'
  		}
  	}
  	stage ('Deploy'){
