@@ -15,8 +15,7 @@ pipeline{
  	}
  	stage ('Deploy'){
  		steps {
-        bat 'mvn clean deploy -P standalone -Dmule.home=D:/Srivis-Mule-Training/mule-enterprise-standalone-4.2.1/apps'
-    echo "deploy completed"
+        bat 'mv move *.jar D:\Srivis-Mule-Training\mule-enterprise-standalone-4.2.1\apps"
  			    }
  		 }
  	}
