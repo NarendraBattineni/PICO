@@ -31,7 +31,15 @@
  					<applicationName>${artifactId}</applicationName> 
  					<community>${mule.runtime.community}</community> 
  				</configuration>
-				
+				<executions>
+ 					<execution>
+					 	<id>deploy</id>
+ 						<phase>deploy</phase>
+ 					<goals>
+ 						<goal>deploy</goal>
+ 					</goals>
+ 					</execution>
+ 				</executions>
 				
 			</plugin>
 		</plugins>
