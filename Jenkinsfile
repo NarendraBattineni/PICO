@@ -6,7 +6,7 @@ pipeline{
  stages {
  	stage ('Build'){
  		steps {
- 			bat 'mvn clean install'
+ 			bat 'cd PICO & mvn clean install'
  		}
  	}
  	stage ('Deploy'){
