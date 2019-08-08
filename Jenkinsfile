@@ -15,7 +15,7 @@ pipeline{
  	}
  	stage ('Deploy'){
  		steps {
-        bat 'mv move *.jar D:/Srivis-Mule-Training/mule-enterprise-standalone-4.2.1/apps"
+        bat 'mv move *.jar D:/Srivis-Mule-Training/mule-enterprise-standalone-4.2.1/apps'
  			    }
  		 }
  	}
