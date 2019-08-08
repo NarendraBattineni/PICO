@@ -25,17 +25,12 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.2.1</muleVersion>
-						<username>mule_srivis12</username>
-						<password>Mule123</password>
-						<applicationName>${project.artifactId}</applicationName>
-						<environment>Sandbox</environment>
-					</cloudHubDeployment>
-					
-				</configuration>
+ 					<deploymentType>standalone</deploymentType>
+ 					<muleVersion>${mule.version}</muleVersion> 
+ 					<muleHome>${mule.home}</muleHome> 
+ 					<applicationName>${artifactId}</applicationName> 
+ 					<community>${mule.runtime.community}</community> 
+ 				</configuration>
 				
 				
 			</plugin>
