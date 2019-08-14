@@ -25,7 +25,7 @@ pipeline{
              body: '''Hi, The pipeline job for Mulesoft is completed and the project was deployed to standalone server.
                       This is the conformation mail from jenkins.
                   Regards,
-                  Jenkins''', 
+                  Jenkins system''', 
               cc: '', 
               from: 'Jenkins@prolifics.com', 
               replyTo: '', 
