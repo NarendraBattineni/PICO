@@ -23,7 +23,7 @@ pipeline{
     always {
         mail bcc: '', 
              body: '''Hi, The pipeline job for Mulesoft is completed and the project was deployed to standalone server.
-                      This is the conformation mail from jenkins.
+                      This is the conformation mail from the jenkins.
                   Regards,
                   Jenkins system''', 
               cc: '', 
