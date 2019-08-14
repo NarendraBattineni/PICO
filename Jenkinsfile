@@ -21,7 +21,9 @@ pipeline{
  	}
  post {
     always {
-        emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+        mail bcc: '', body: '''Hi,
+
+this is for test.''', cc: '', from: '', replyTo: '', subject: 'Jenkins job for mulesoft demo', to: 'narendra.battineni@prolifics.com'
     }
 }
 }
