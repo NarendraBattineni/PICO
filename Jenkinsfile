@@ -1,8 +1,5 @@
 pipeline{
  agent any
- environment {
-    ANYPOINT = credentials('ANYPOINT')
- }
  tools {
        maven 'maven'
        jdk 'JAVA_HOME'
