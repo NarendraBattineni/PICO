@@ -21,9 +21,15 @@ pipeline{
  	}
  post {
     always {
-        mail bcc: '', body: '''Hi,
-
-this is for test.''', cc: '', from: '', replyTo: '', subject: 'Jenkins job for mulesoft demo', to: 'narendra.battineni@prolifics.com'
+        mail bcc: '', 
+             body: '''Hi, The pipeline job for Mulesoft is completed and the project was deployed to standalone server.
+                  Regards,
+                  Jenkins''', 
+              cc: '', 
+              from: 'Jenkins@prolifics.com', 
+              replyTo: '', 
+              subject: 'Jenkins job for mulesoft demo', 
+              to: 'narendra.battineni@prolifics.com'
     }
 }
 }
