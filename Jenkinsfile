@@ -12,7 +12,7 @@ pipeline{
  	}
  	stage ('Deploy'){
  		steps {
-        bat 'cd target & move *.jar C:/mule-enterprise-standalone-4.2.1/apps'
+        bat 'cd target & move *.jar C:\mule-enterprise-standalone-4.2.1/apps'
  			    }
  		 }
  	}
